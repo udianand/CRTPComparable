@@ -7,7 +7,6 @@ class Comparisons
 {
 };
 
-
 // == operator implementation
 template <typename Derived>
 bool operator==(const Comparisons<Derived>& o1, const Comparisons<Derived>& o2) noexcept
@@ -51,8 +50,6 @@ bool operator >= (const Comparisons<Derived>& o1, const Comparisons<Derived>& o2
     
     return !(d1 < d2);
 }
-
-
 
 struct Person: public Comparisons<Person>
 {
